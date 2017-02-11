@@ -12,6 +12,8 @@ import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
 
+import java.util.concurrent.TimeUnit;
+
 public class GyroscopeActivity extends AppCompatActivity implements SensorEventListener{
     private SensorManager mSensorManager;
     private Sensor mGryroscope;
@@ -83,6 +85,9 @@ public class GyroscopeActivity extends AppCompatActivity implements SensorEventL
 
         tz=(TextView)findViewById(R.id.gyr_z);
         tz.setText(String.format("Angular acc in z: " + Float.toString(deltaRotationVector[2])));
+        for(int i = 0; i< 1000000; i++);
+        for(int i = 0; i< 1000000; i++);
+        for(int i = 0; i< 1000000; i++);
         // User code should concatenate the delta rotation we computed with the current rotation
         // in order to get the updated rotation.
         // rotationCurrent = rotationCurrent * deltaRotationMatrix;

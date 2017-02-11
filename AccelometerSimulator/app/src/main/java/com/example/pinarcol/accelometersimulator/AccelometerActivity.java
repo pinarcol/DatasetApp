@@ -9,9 +9,10 @@ import android.hardware.SensorEvent;
 import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.Bundle;
-import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.TextView;
+
+import java.util.concurrent.TimeUnit;
 
 public class AccelometerActivity extends AppCompatActivity implements SensorEventListener {
     private SensorManager mSensorManager;
@@ -72,6 +73,9 @@ public class AccelometerActivity extends AppCompatActivity implements SensorEven
 
         tz=(TextView)findViewById(R.id.accz);
         tz.setText(String.format("Acc in z: " + Float.toString(linear_acceleration[2])));
+        for(int i = 0; i< 1000000; i++);
+        for(int i = 0; i< 1000000; i++);
+        for(int i = 0; i< 1000000; i++);
     }
 
     @Override
