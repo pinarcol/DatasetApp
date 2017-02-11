@@ -10,33 +10,21 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.pinarcol.accelometersimulator.MainActivity">
 
-    <TextView
-        android:text="TextView"
+    <Button
+        android:text="Accelometer"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/acc_text_x"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:id="@+id/accelometer" />
 
-    <TextView
-        android:text="TextView"
+    <Button
+        android:text="Gyroscope"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/acc_text_x"
-        android:layout_alignRight="@+id/acc_text_x"
-        android:layout_alignEnd="@+id/acc_text_x"
-        android:layout_marginTop="19dp"
-        android:id="@+id/acc_text_y" />
-
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/acc_text_y"
-        android:layout_alignRight="@+id/acc_text_y"
-        android:layout_alignEnd="@+id/acc_text_y"
-        android:layout_marginTop="20dp"
-        android:id="@+id/acc_text_z" />
-
+        android:layout_marginTop="49dp"
+        android:id="@+id/gyroscope"
+        android:layout_below="@+id/accelometer"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -11,8 +11,23 @@
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AccelometerActivity"
+            android:label="Accelometer" >
+            <intent-filter>
+                <action android:name="android.intent.action.ACCELOMETER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".GyroscopeActivity"
+            android:label="Gyroscope" >
+            <intent-filter>
+                <action android:name="android.intent.action.GYROSCOPE" />
+                <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
     </application>
